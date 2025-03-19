@@ -1,0 +1,428 @@
+/* Global Styles */
+body {
+    padding-top: 0;
+     /* Light blue background */
+    font-family: 'Roboto', sans-serif; /* Main font for general text */
+    color: #333; /* Ensure text color is a readable gray */
+}
+
+/* Headings font (Merriweather) */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Merriweather', serif;  /* Professional, readable font for headings */
+}
+
+/* Emergency Navbar */
+.navbar.bg-danger {
+    background-color: #3a5b90 !important;  /* Blueish background for emergency */
+    font-size: 12px !important;
+    text-align: center !important;
+}
+
+.navbar.bg-danger .navbar-text {
+    font-size: 12px !important;
+    text-align: left !important;  /* Align text to the left for emergency text */
+    padding: 7px !important;
+}
+
+.navbar.bg-danger .navbar-text a {
+    color: white !important;
+    text-decoration: none !important;
+}
+
+.navbar.bg-danger .navbar-text a:hover {
+    color: white !important;
+    text-decoration: none !important;
+}
+
+/* Social Media Icons */
+.navbar.bg-danger .navbar-text a {
+    color: white !important;
+    text-decoration: none !important;
+    margin-left: 10px; /* Spacing between icons */
+}
+
+.navbar.bg-danger .navbar-text a:hover {
+    color: #ffcc00 !important;  /* Highlight color on hover */
+}
+
+/* Ensure both sides of the navbar are aligned */
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Main Navbar */
+.navbar {
+    background-color: #65befd;  /* Soft blue for navbar */
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  /* Subtle shadow */
+    z-index: 1000;  /* Ensure it stays on top */
+}
+
+/* Navbar brand (Logo and Hospital Name) */
+.navbar .navbar-brand {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+/* Navbar brand logo */
+.navbar .navbar-brand img {
+    width: 40px;  /* Adjust logo size */
+    height: 40px;  /* Adjust logo size */
+}
+
+/* Navbar brand text */
+.navbar .navbar-brand span {
+    margin-left: 10px;
+    font-size: 1.2rem;
+}
+
+/* Navbar links */
+.navbar .navbar-nav .nav-link {
+    color: #fff;
+    padding: 10px 15px;
+    font-size: 1rem;
+    text-transform: uppercase;  /* Capitalize nav links */
+    transition: color 0.8s ease;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    color: #4a8bbe;  /* Lighter blue on hover */
+    transform: translateY(-1px);
+}
+
+
+
+/* Navbar collapse (for mobile view) */
+.navbar .navbar-collapse {
+    justify-content: flex-end;  /* Align links to the right on larger screens */
+}
+
+/* Navbar active link (current page) */
+.navbar .navbar-nav .nav-item.active .nav-link {
+    color: #1f62b0;  /* Dark blue for active link */
+    font-weight: bold;
+}
+
+/* Custom button for Patient Portal */
+.navbar .btn-outline-light {
+    color: #fff;
+    border-color: #fff;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.navbar .btn-outline-light:hover {
+    background-color: #fff;
+    color: #65befd;
+    border-color: #65befd;
+    transform: translateY(-5px);
+}
+
+
+
+
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 60vh;  /* Adjust as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* Hero Carousel */
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;  /* Slight opacity to blend with the hero section */
+}
+
+/* Hero Content (Card on the Right) */
+.hero-content {
+    z-index: 2;
+}
+
+/* Position Card on the Right */
+.hero-content {
+    position: absolute;
+    top: 50%;
+    right: 0;  /* Align the card to the right side */
+    transform: translateY(-50%);  /* Center the card vertically */
+}
+
+/* Bootstrap Card in Hero Section */
+/* Card */
+.card {
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    margin-right: 10px;
+    transition: all 0.3s ease;  /* Smooth transition for hover effect */
+}
+
+/* Hover effect for card */
+.card:hover {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);  /* Increased shadow on hover */
+    transform: translateY(-5px);  /* Slight lift effect */
+}
+
+/* Card Image */
+.card-img-top {
+    border-radius: 10px 10px 0 0;  /* Rounded top corners for the image */
+}
+
+/* Card Title */
+.card-title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Card Button */
+.card-body .btn {
+    background-color: #6FA3D8;  /* Medium blue button */
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+
+.card-body .btn:hover {
+    background-color: #4A8BBE;  /* Darker blue on hover */
+}
+
+/* Card Background Colors - details cards */
+.card {
+    height: 100%; /* Ensure all cards are the same height */
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+/* Optional: Adjust the height for consistent card sizes */
+.col-md-3 {
+    display: flex;
+    justify-content: center;
+}
+
+.my-custom-margin {
+    margin-top: -100px;  /* Adjust the top margin */
+    /* Adjust the bottom margin */
+}
+
+.card.bg-primary {
+    background-color: #007bff !important;
+}
+
+.card.bg-info {
+    background-color: #17a2b8 !important;
+}
+
+.card.bg-success {
+    background-color: #28a745 !important;
+}
+
+.card.bg-danger {
+    background-color: #dc3545 !important;
+}
+
+/* Optional: Custom Styling for Card Titles */
+.card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Optional: Button Styles */
+.card .btn {
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.card .btn:hover {
+    background-color: #e2e6ea;
+}
+
+
+/* Welcome Section Styles */
+.welcome-container {
+    background-color: #f4f7fb; /* Light background color */
+    border-radius: 10px; /* Rounded corners */
+    padding: 30px; /* Padding around the section */
+}
+
+/* Heading Styling */
+.welcome-container h2 {
+    font-family: 'Merriweather', serif;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Paragraph Styling */
+.welcome-container p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Button Styling */
+.welcome-container .btn-primary {
+    background-color: #65befd;
+    border-color: #65befd;
+}
+
+.welcome-container .btn-primary:hover {
+    background-color: #4a8bbe;
+    border-color: #4a8bbe;
+    transform: translateY(1px);
+}
+
+
+
+/* Departments Card Styling */
+.card {
+    border-radius: 8px; /* Rounded corners */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden; /* Ensures the image stays within the card's bounds */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+}
+
+.card-img-top {
+    height: 200px; /* Set a fixed height for the image */
+    object-fit: cover; /* Ensure the image covers the area */
+    width: 100%; /* Make sure the image stretches across the entire width of the card */
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.card-title {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.card-text {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+
+/* Contact Section Styling */
+#contact {
+    background-color: #f4f7fb;
+    padding: 50px 50px;
+    border-radius: 10px;
+}
+
+#contact h2 {
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
+}
+
+#contact p {
+    font-family: 'Roboto', sans-serif;
+    color: #555;
+}
+
+#contact .btn {
+    background-color: #65befd;
+    border-color: #65befd;
+}
+
+#contact .btn:hover {
+    background-color: #4a8bbe;
+    border-color: #4a8bbe;
+}
+
+
+
+
+/* Footer Styling */
+.footer {
+    background-color: #f8f9fa;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    border-top: 2px solid #ddd;
+}
+
+.footer h5 {
+    color: #009688;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.footer a {
+    color: #333;
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding:10px;
+}
+
+.footer a:hover {
+    color: #007bff;
+    text-decoration: underline;
+}
+
+/* Social Media Icons */
+.footer .fab {
+    transition: all 0.3s ease-in-out;
+}
+
+.footer .fab:hover {
+    transform: scale(1.2);
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+    .footer .row {
+        text-align: center;
+    }
+    .footer .d-flex {
+        justify-content: center !important;
+    }
+
+    
+}
+
+
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .navbar .navbar-nav {
+        margin-top: 10px;  /* Space between the navbar and links */
+        text-align: center;
+    }
+
+    .navbar .navbar-toggler {
+        padding: 5px 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar .navbar-brand span {
+        font-size: 1rem;
+    }
+
+    .navbar .navbar-nav .nav-link {
+        font-size: 0.9rem;
+    }
+}
+
+/* Footer Links - Responsive */

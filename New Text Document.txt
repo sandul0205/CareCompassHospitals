@@ -1,0 +1,11 @@
+color codes:
+
+main:#0D3B66
+Primary: #3B7A99
+: #A4C8E1
+
+pw:
+
+admin1 : adminpass
+staffpass
+patientpass
